@@ -81,22 +81,24 @@ class CalculatorViewController: UIViewController {
         
         // If the text is not an empty String ""
         if bill != "" {
-            
+
             // Turn the bill from a String e.g. "125.50" to an actual Integer with decimal places e.g. 125.50
             billTotal = Double(bill)!
-            
+
             // Multiply the bill by the tip percentage and divide the number of people to split the bill.
             let result = billTotal * (1 + tip) / Double(numberOfPeople)
 //            let result = (billTotal * tip) / Double(numberOfPeople)
-            
+
             // Round the result to 2 decimal places and turn in to a String.
             finalResult = String(format: "%.2f", result)
             
+            //        In Main.storyboard there is a segue between CalculatorVC and ResultsVC with the identifier "goToResults".
+            //        This line triggers the segue to happen.
+                    self.performSegue(withIdentifier: "goToResults", sender: self)
+
         }
         
-        //In Main.storyboard there is a segue between CalculatorVC and ResultsVC with the identifier "goToResults".
-        //This line triggers the segue to happen.
-        self.performSegue(withIdentifier: "goToResults", sender: self)
+
     }
     
     
