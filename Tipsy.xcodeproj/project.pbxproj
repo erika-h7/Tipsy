@@ -42,6 +42,8 @@
 		8B45B22728CA1AF80041AF68 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				8B45B22528CA1AEE0041AF68 /* ResultsViewController.swift */,
+				ADB689562326708D006D4E2B /* CalculatorViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -67,9 +69,7 @@
 			children = (
 				ADB689522326708D006D4E2B /* AppDelegate.swift */,
 				ADB689542326708D006D4E2B /* SceneDelegate.swift */,
-				ADB689562326708D006D4E2B /* CalculatorViewController.swift */,
 				8B45B22728CA1AF80041AF68 /* Controllers */,
-				8B45B22528CA1AEE0041AF68 /* ResultsViewController.swift */,
 				ADB689582326708D006D4E2B /* Main.storyboard */,
 				ADB6895B2326708E006D4E2B /* Assets.xcassets */,
 				ADB6895D2326708E006D4E2B /* LaunchScreen.storyboard */,
