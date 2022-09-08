@@ -2,13 +2,15 @@
 //  ViewController.swift
 //  Tipsy
 //
-//  Created by Angela Yu on 09/09/2019.
+//  Created by Erika H on 09/08/2022.
 //  Copyright © 2019 The App Brewery. All rights reserved.
 //
 
 import UIKit
 
 class CalculatorViewController: UIViewController {
+    
+    
     
     // UI
     @IBOutlet weak var billTextFiled: UITextField!
@@ -22,6 +24,16 @@ class CalculatorViewController: UIViewController {
     
     // Percentage buttons
     @IBAction func tipChanged(_ sender: UIButton) {
+        
+        // Deselect all tip buttons via IBOutlets
+        zeroPctButton.isSelected = false
+        tenPctButton.isSelected = false
+        twentyPctButoon.isSelected = false
+        
+        // Make the button that trigger the IBAction slected.
+        sender.isSelected = true
+        
+        
     }
     
     
